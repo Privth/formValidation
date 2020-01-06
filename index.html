@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Form Validation & alters</h1>
+    </header>
+    <form id="register">
+      <div class="input-group">
+        <label for="firstName">First Name:</label>
+        <input  id="firstName" name="firstName" type="text" />
+        <p>Please enter your Name</p>
+      </div>
+      <div class="input-group">
+        <label for="surName">Surname:</label>
+        <input id="surName" name="surName" type="text" />
+        <p>Please enter your Surname</p>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="text" />
+        <p>Please enter your valid Email Address</p>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="text" />
+        <p>
+          Minium 8 characters, at lease 1 uppercase letter, 1 lowercase letter
+          and 1 number
+        </p>
+      </div>
+      <div class="input-group full">
+        <input type="submit" class="submit-btn" value='SUBMIT'/>
+        <div class="clear"></div>
+      </div>
+      <div class="errors"></div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
